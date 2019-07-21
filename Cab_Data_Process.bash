@@ -42,7 +42,7 @@ fi
 
 
 #RENAMING OUFILES
-mv top5_paid_zone_folder/*.csv top5_paid_zone_folder/top_tipping_zones.csv
+hadoop fs -mv top5_paid_zone_folder/*.csv top5_paid_zone_folder/top_tipping_zones.csv
 if [ $rc -eq 0 ]; then
             echo "top tipping zone file moved"
         else 
@@ -50,7 +50,7 @@ if [ $rc -eq 0 ]; then
             exit $rc
 fi
 
-mv longest5_trip_day_folder/*.csv longest5_trip_day_folder/longest_trips_per_day.csv
+hadoop fs -mv longest5_trip_day_folder/*.csv longest5_trip_day_folder/longest_trips_per_day.csv
 if [ $rc -eq 0 ]; then
             echo "longest5 trip file moved"
         else 
