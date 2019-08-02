@@ -2,9 +2,9 @@
 NYC Taxi Trip Test Assesements
 
 FOR THIS TASK I HAVE PROVIDED DOCKERFILE WITH DEPENDANT ENVIORNMENTS TO EXECUTE.
-   --JAVA
-   --HADOOP
-   --PYSPARK(Python + SPARK )
+   - JAVA
+   - HADOOP
+   - PYSPARK(Python + SPARK )
    
 
 
