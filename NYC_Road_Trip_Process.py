@@ -47,7 +47,8 @@ def data_process(drive_df, drive_zone_df):
     drive_df = drive_df.select(drive_df["tpep_pickup_datetime"],
                                drive_df["tpep_dropoff_datetime"],
                                drive_df["trip_distance"],
-                               drive_df["tip_amount"]
+                               drive_df["tip_amount"],
+							   drive_df["DOLocationID"]
                                )
     drive_df.createOrReplaceTempView("drive_flat")
     drive_zone_df.createOrReplaceTempView("zone_lookup")
