@@ -33,8 +33,10 @@ FOR THIS TASK I HAVE PROVIDED DOCKERFILE WITH DEPENDANT ENVIORNMENTS TO EXECUTE.
 7) I have attached Dockerfile to Built and run it (docker run -it image_test /bin/sh)
         -  It has JAVA ,PYTHON,  HADOOP and SPARK 
 
-8)  Copy .py and .bash  and input and lookup csv file in the same location (/tmp ) and also create a subfolder (/tmp/output )
-    Then run the .bash shell script with required paramteres mentioned in step 6.
+8)  Copy(local to docker container) .py and .bash  and input and lookup csv file in the same location (/tmp ) and 
+    also create a subfolder (/tmp/output ). 
+    Then run the .bash shell script with required paramteres mentioned in step 6. 
+            - sh <*.bash> /tmp /tmp/output
 
 9)  The spark job will first Save the trip data to Parquet Files in OutPut Location in sub Directory
       'Drive_parquet'(/tmp/output/Drive_parquet), and there will be separate subfolders for the 2 output files.                    
