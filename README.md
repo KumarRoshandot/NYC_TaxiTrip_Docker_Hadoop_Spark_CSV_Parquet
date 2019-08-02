@@ -23,12 +23,12 @@ FOR THIS TASK I HAVE PROVIDED DOCKERFILE WITH DEPENDANT ENVIORNMENTS TO EXECUTE.
 
 5)  Since the Spark job output files in hdfs format ( part-00000-<>-<>.csv filename) , this  needs to be renamed to the required filename mentioned in step 3. 
 
-6)  So for the spark job and rename activity i have clubbed it together in a unix bash script.
-      -Cab_Data_Process.bash
-      -This shell script will run Spark job and also output 2 files mentioned in step 3.
-      -This shell script required following parameters to run
-                   - INPUTFILE LOCATION (/tmp)
-                   - OUTPUT LOCATION (/tmp/output)
+6)  So for the spark job and rename activity i have clubbed it together in a unix bash script. 
+      - Cab_Data_Process.bash
+      - This shell script will run Spark job and also output 2 files mentioned in step 3.
+      - This shell script required following parameters to run 
+                     - INPUTFILE LOCATION (/tmp)
+                     - OUTPUT LOCATION (/tmp/output)
                    
 7) I have attached Dockerfile to Built and run it (docker run -it image_test /bin/sh)
         -  It has JAVA ,PYTHON,  HADOOP and SPARK 
