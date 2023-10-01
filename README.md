@@ -1,6 +1,10 @@
 # NYC_TaxiTrip_Assignment
 NYC Taxi Trip Test Assesements
 
+----
+## Docker FIle Cooked with HADOOP AND SPARK 
+
+---
 FOR THIS TASK I HAVE PROVIDED DOCKERFILE WITH DEPENDANT ENVIORNMENTS TO EXECUTE.
    - JAVA
    - HADOOP
